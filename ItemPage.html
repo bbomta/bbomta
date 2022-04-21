@@ -1,0 +1,246 @@
+<!DOCTYPE html><!--22161057_한예진-->
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="밤토끼행성" />
+    <meta property="og:url" content="http://yejin.dothome.co.kr/" />
+    <meta property="og:image" content="http://yejin.dothome.co.kr/img/hello.png" />
+    <meta property="og:description" content="신선한 건초와 사료를 만나봐요" />
+
+    <meta name="description" content="안녕하세요. 만나서 반갑습니다.">
+    <meta name='keywords' content='토끼, 사료, 음식' />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="밤토끼행성" />
+    <meta name="twitter:url" content="http://yejin.dothome.co.kr/" />
+    <meta name="twitter:image" content="http://yejin.dothome.co.kr/img/hello.png" />
+    <meta name="twitter:description" content="신선한 건초와 사료를 만나봐요" />
+
+    <link rel="stylesheet" type='text/css' href="./page.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jquery-3.6.0.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    
+    <title>프로젝트명(밤토끼행성)</title>
+</head>
+
+<body>
+    <!--<aside id="scrollTop">  
+        <font-awesome-icon icon="fa-thin fa-arrow-down" /><br>
+    </aside> -->
+    <div id="remote">
+        <a href="#homeup" id="homeup"><img src="./img/arrowup.png" alt="맨 위로"></a>
+        <a href="#homedown" id="homedown"><img src="./img/arrowdown.png" alt="맨 아래로"></a>
+        <a href="https://www.todang.co.kr/"><img src="./img/rabbit.png" alt="토당마을로"></a>
+    </div>
+    
+   <script>
+     /*$("#scrollTop").click(function(){
+         console.log("click");
+         $("html, body").animate({scrollTop: 0},1000);
+     });*/
+
+     $(document).ready(function() {
+         $(function () {
+            $('#homeup').click(function(){
+             $('body,html').animate({
+                 scrollTop:0
+             }, 800);
+              return flase;
+         });
+     
+     var scrollHeight = $(document).height();
+        $('#homedown').click(function (){
+            $('body,html').animate({
+                scrollTop: scrollHeight
+            }, 800);
+            return false;
+        });
+    });
+
+});
+
+
+
+    </script>
+
+
+    <div id="wrapper">
+    <div id="index_back2"></div>
+    <div id="banner">
+        <a href="./login.html"><img src="./img/banner1.png"></a>
+    </div>
+    <!-- <div id="index_back1"></div> -->
+    <!-- <div><img src="./img/index_back1.png"></div> -->
+
+    
+
+    <!-- <div class="wrap"> -->
+    <!-- 배경 이미지 -->
+
+    <!-- 헤더 -->
+    <header>
+        <h1 class="hidden">상단 네비게이션</h1>
+        <!-- 상단 로고 -->
+
+        <nav>
+
+            <h1 class="hidden">사이트명</h1>
+            
+            <div class="navbar_logo">
+                <div class="navbar_logo_a">
+                <a href="index.html">
+                <img src="./img/logo.png"></a></div>
+            </div>
+
+            <div id="menu">
+            <ul id="gnb" class="navbar_menu">
+                <li><a href="./ItemPage.html">Best Item</a></li>
+                <li><a href="./ProductPage.html">Product</a></li>
+                <li><a href="./DoPage.html">Import</a></li>
+            </ul>
+
+            
+                <ul class="navbar_log">
+                <li><a href="login.html">회원가입</a></li>
+                <li><a href="login.html">장바구니</a></li>
+            </ul>
+        </div>
+
+        </nav>
+    </header>
+<!-- </div> -->
+
+
+    <!-- 본문 -->
+    <section id="" class="">
+        
+        <div class="wrap">
+            <div class="slide">
+                <h1 id="slide_text1">Best 건초</h1>
+        
+                <div class="slick_gallery">
+                    <div class="box"><img src="./img/slideimg1.png"></li></div>
+                    <div class="box"><img src="./img/slideimg2.png"></div>
+                    <div class="box"><img src="./img/slideimg3.png"></div>
+                    <div class="box"><img src="./img/slideimg4.png"></div>
+                    <div class="box"><img src="./img/slideimg5.png"></div>
+                    <div class="box"><img src="./img/slideimg6.png"></div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <h1 id="slide_text1">Best 간식</h1>
+        
+                <div class="slick_gallery">
+                    <div class="box"><img src="./img/slidesnack1.png"></li></div>
+                    <div class="box"><img src="./img/slidesnack2.png"></div>
+                    <div class="box"><img src="./img/slidesnack3.png"></div>
+                    <div class="box"><img src="./img/slidesnack4.png"></div>
+                    <div class="box"><img src="./img/slidesnack5.png"></div>
+                    <div class="box"><img src="./img/slidesnack6.png"></div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <h1 id="slide_text1">Best 용품</h1>
+        
+                <div class="slick_gallery">
+                    <div class="box"><img src="./img/slidepro1.png"></li></div>
+                    <div class="box"><img src="./img/slidepro2.png"></div>
+                    <div class="box"><img src="./img/slidepro3.png"></div>
+                    <div class="box"><img src="./img/slidepro4.png"></div>
+                    <div class="box"><img src="./img/slidepro5.png"></div>
+                    <div class="box"><img src="./img/slidepro6.png"></div>
+                </div>
+            </div>
+
+            <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.slick_gallery').slick({
+                arrows: true,
+                dots: true,
+                autoplay: true,
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3
+
+                // setting-name: setting-value
+            });
+        });
+
+        
+    </script>
+        </div>
+
+
+
+
+    
+
+    </section>
+</div>
+
+    
+    <footer>
+        <div class="wrap">
+        <ul id="footer_info"><br><br>
+            <br><li>회사소개 | 이용약관 | 개인정보 취급방침 | 이용안내 </li><br><br>
+            <li>법인명(상호): (주)토끼행성 | 대표자 : 한예진 | 메일: hanyejin@naver.com</li><br>
+            <br>
+            <li>주소 : 서울시 강남구 달동네동 123</li>
+        </ul>
+
+
+        <ul id="footer_num">
+            <li><h1>010-1234-5678</h1></li><br><br>
+            <li> 월~ 목 | 9:00 ~ 13:00</li><br>
+            <li>점심시간 : 12:00 ~1:00</li><br>
+            <li>금,토,일 공휴일 휴무</li>
+
+        </ul>
+
+        <address id="copyright">        
+           Copyright  2022 한예진.  All rights reserved 
+        </address></div>
+    </footer>
+
+    <!-- 푸터 -->
+   
+
+   <!--
+    <footer>
+        <div id="footer_box">
+          <div class="clear"></div>
+          <ul id="footer_logo">
+            <li><img src="./img/footer_logo.png"></li>
+    
+          </ul>
+    
+    
+    
+    
+          <ul id='address'>
+            <li>서울시 강남구 니켈러디언동 1234
+            우:123-1234</li>
+            <li>Tel:031-123-1234 Email : email@domain.com</li>
+            <li>COPYRIGHT (C) 뚱이 ALL RIGHTS RESERVED</li>
+    
+          </ul>
+    
+    
+        </div>
+      </footer>-->
+</body>
+
+</html>

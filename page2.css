@@ -1,0 +1,850 @@
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2,
+h3, h4, h5, h6, form, fieldset, 
+p,img 
+{
+    margin: 0 ;
+    padding: 0 ;
+    font-family: 'Noto Sans KR';
+}
+
+#box {
+  /* top: 836px; */
+  /* position: absolute; */
+  width: 100%;
+  height: 150px;
+  
+}
+
+.slide {
+  margin-top: 50px;
+}
+.slick_gallery {
+  
+
+}
+
+.slick_gallery .box {
+  border: 1px solid rgb(2, 2, 26);
+  height: 400px;
+  font-size: 50px;
+  font-weight: bold;
+  background-color: white;
+  text-align: center !important;
+  background-repeat : no-repeat;
+  background-size : cover; 
+
+}
+
+
+#slide_text1 {
+  text-align: center;
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+li {
+  margin-left: 10px;
+}
+
+h1, p {
+  margin: 0;
+}
+
+main {
+  position: relative;
+  padding: 1rem;
+  height: 100%;  
+}
+
+body {
+  background: rgb(23, 18, 95);
+}
+
+body, html {
+  height: 100%;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* 배너 */
+#banner {
+  width: 1920px;
+  height: 128px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+
+  text-align: center;
+  background-repeat : no-repeat;
+  background-size : cover; 
+  /* border: solid 1px red; */
+}
+
+/* 배너 자식 */
+#banner img {
+  position: absolute;
+  text-align: center;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+.clear {
+  margin: 0;
+  padding: 0;
+}
+
+
+.wrap {
+  /* 최대 사이즈
+  작을 때는 100%이다가 커질 때 1230px만 사용*/
+  max-width: 1230px !important; 
+  margin: 0 auto !important;
+  text-align: center;
+}
+
+.wraplog {
+    /* 최대 사이즈
+    작을 때는 100%이다가 커질 때 1230px만 사용*/
+    max-width: 1230px !important; 
+    margin: 0 auto !important;
+    text-align: center;
+    background-color: #0b012e;
+
+  }
+
+button {
+    background-color: #cb50f0;
+    color:#100044
+}
+
+.loginpos {
+    margin-top: 200px;
+    color: white;
+}
+
+.wrap1 {
+    /* 최대 사이즈
+    작을 때는 100%이다가 커질 때 1230px만 사용*/
+    max-width: 1230px !important; 
+    margin: 0 auto !important;
+  }
+
+#pos {
+  margin-top: 150px;
+  margin-left: 120px;
+}
+
+.hidden {
+    display: none;
+}
+
+.input1 {
+    width: 500px;
+    height: 32px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 10px;
+    background-color: rgb(233, 233, 233);
+  }
+
+  .input2 {
+      height: 32px;
+      background-color: rgb(255, 178, 116);
+      border: solid 1px rgb(83, 46, 0);
+      border-radius: 20%;
+  }
+
+
+  #index_back {
+    height: 100vh;
+    background-image: url('./img/index_back.png');
+    background-repeat : no-repeat;
+    background-size : cover; 
+    /*border: solid 1px red;*/
+  }
+ 
+
+  #index_back2 {
+  
+    height: 100vh;
+    background-image: url('./img/index_back2.png');
+    background-repeat : no-repeat;
+    background-size : cover; 
+    /*border: solid 1px red;*/
+  }
+
+  .navbar_menu li {
+    padding-left: 20px;
+  }
+
+  .navbar_log {
+    position: absolute;
+    margin-left: 800px;
+    display: inline;
+    list-style: none;
+    text-decoration: none !important;
+    color: white;
+    
+  }
+
+  .navbar_log li {
+    padding-left: 20px;
+  }
+  body{
+    -ms-overflow-style: none;
+    
+    }
+    
+   ::-webkit-scrollbar {
+     display: none;
+   }
+  
+   /* -------------------------------------------------*/
+   
+   header {  
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 130px;
+    padding: 0;
+    color: white; 
+    background: #eee;
+    background: rgb(79, 49, 116); 
+    font-weight: bold;
+    z-index: 100;
+  } 
+
+
+  #gnb, a, li {
+    display: inline;
+    list-style: none;
+    text-decoration: none !important;
+    color: white;
+  }
+
+  
+  
+  nav {
+    margin-top: 15px;
+    margin-left: 200px;
+    
+  }
+
+
+
+  .navbar_logo{
+    margin-left: 730px;
+  }
+  
+  /* 로고 클릭 시 이미지 확대*/
+  .navbar_logo_a{
+    width: 70px;
+  }
+
+  .navbar_logo_a img{
+    transition: all 0.2s linear;
+  }
+
+  .navbar_logo_a:hover img{
+    transform: scale(1.4);
+  }
+  
+  /* -------------------------------------------------*/
+  #menu {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+  }
+
+  #menu li {
+    display: inline-block;/*여백 없이 좌측으로 붙은 li*/
+    padding: 0 40px 0 0; 
+  }
+  #menu a:after {/*after 가상요소*/
+    display:block;/*a요소를 블록 요소라고 선언*/
+    content: '';
+    border-bottom: solid 2px rgb(236, 159, 255);
+    transform: scaleX(0);/*크기를 0으로 줌으로써 평상시엔 밑줄 없음*/
+    transition: transform 250ms ease-in-out; /*변형 방식*/
+  }
+
+  #menu a:hover:after {
+    transform: scaleX(1);/*a 속성에 hover시 기존 크기로*/
+    
+  }
+  /* -------------------------------------------------*/
+
+  h2 {
+    color: white;
+    font-size: 40px;
+  }
+
+  #big {
+    font-size: 80px;
+    color: transparent;
+    background: linear-gradient(to right top, #ffff3e, #ffffff);
+    -webkit-background-clip: text;
+  }
+  #section1 {
+    float: left;
+    width: 1920px;
+    height: 3200px;
+    /*border: solid 1px yellowgreen;*/
+    background-image: url("./img/index_back1.png");
+  }
+
+  #position {
+    margin-top: 260px;
+    margin-left: 900px;
+  }
+
+  #position1 {
+    margin-top: 200px;
+    margin-left: 1200px;
+  }
+
+  #position2 {
+    margin-top: 200px;
+    margin-left: 1050px;
+  }
+
+  #position3 {
+    margin: 200px;
+    margin-left: 700px;
+  }
+
+ 
+  /* -------------------------------------------------*/
+  /* 말풍선 */
+  .tooltip {
+    background-color: #f9eefd;
+    border: #d976fd solid 1px;
+    border-radius: 5px;
+    color: #cb50f0; 
+    font-size: 12px; 
+    font-weight: 500; 
+    height: auto; 
+    letter-spacing: -0.25px;
+    margin-top: 6.8px;
+    /* margin-left: 130px; */
+    padding: 5px 11px; 
+    position: relative; 
+    width: fit-content; 
+    /*z-index: 100; */
+  }
+
+  .tooltip1 {
+    background-color: #fdeeee;
+    border: #fd7676 solid 1px;
+    border-radius: 5px;
+    color: #f05050; 
+    font-size: 12px; 
+    font-weight: 500; 
+    height: auto; 
+    letter-spacing: -0.25px;
+    margin-top: 6.8px;
+    margin-left: 130px;
+    padding: 5px 11px; 
+    position: relative; 
+    width: fit-content; 
+    /*z-index: 100; */
+  }
+
+  .tooltip::after { 
+    border-color: #f9eefd transparent;
+    border-style: solid;
+    border-width: 0 6px 8px 6.5px;
+    content: '';
+    display: block;
+    left: 75px; 
+    position: absolute; 
+    top: -7px; width: 0;
+    /* z-index: 1;  */
+  }
+
+  .tooltip::before {
+    border-color: #d976fd transparent;
+    border-style: solid;
+    border-width: 0 6px 8px 6.5px;
+    content: '';
+    display: block;
+    left: 75px;
+    position: absolute;
+    top: -8px;
+    width: 0;
+    /* z-index: 0; */
+  }
+
+  .tooltip1::after { 
+    border-color: #fdeeee transparent;
+    border-style: solid;
+    border-width: 0 6px 8px 6.5px;
+    content: '';
+    display: block;
+    left: 75px; 
+    position: absolute; 
+    top: -7px; width: 0;
+    /* z-index: 1;  */
+  }
+
+  .tooltip1::before {
+    border-color: #fd7676 transparent;
+    border-style: solid;
+    border-width: 0 6px 8px 6.5px;
+    content: '';
+    display: block;
+    left: 75px;
+    position: absolute;
+    top: -8px;
+    width: 0;
+    /* z-index: 0; */
+  }
+
+  /* -------------------------------------------------*/
+ /* 달 배경 베스트 아이템*/
+
+ .BestItem {
+    width:243px;
+    height:250px;
+    display: inline-block;
+    text-align: center;
+
+ }
+
+ /* .BestItem img {
+  width: 150px;
+  padding-top: 40px;
+  transition: all 0.2s linear;
+ }
+
+ .BestItem:hover img {
+  transform: scale(1.4)
+ } */
+ .moon {
+  overflow: hidden;
+  border-radius: 50%;
+  background-image: url("./img/sellback.png");
+  margin-top: 600px;
+  width: 100%;
+  height: 100%;
+  background-repeat : no-repeat;
+  text-align: center;
+ }
+
+
+ .moon1 {
+  overflow: hidden;
+  border-radius: 50%;
+  background-image: url("./img/sellback.png");
+  margin-top: -250px;
+  margin-left: 480px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-repeat : no-repeat;
+
+ }
+
+ .moon2 {
+  overflow: hidden;
+  border-radius: 50%;
+  background-image: url("./img/sellback.png");
+  margin-top: -250px;
+  margin-left: 980px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-repeat : no-repeat;
+
+ }
+
+ .moon3 {
+  overflow: hidden;
+  border-radius: 50%;
+  background-image: url("./img/sellback.png");
+  margin-top: 200px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-repeat : no-repeat;
+
+ }
+
+ .moon4 {
+  overflow: hidden;
+  border-radius: 50%;
+  background-image: url("./img/sellback.png");
+  margin-top: -250px;
+  margin-left: 480px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-repeat : no-repeat;
+
+ }
+
+ .moon5 {
+  overflow: hidden;
+  border-radius: 50%;
+  background-image: url("./img/sellback.png");
+  margin-top: -250px;
+  margin-left: 980px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-repeat : no-repeat;
+
+ }
+
+ .moon img {
+  width: 150px;
+  padding-top: 40px;
+  transition: all 0.2s linear;
+ }
+
+ .moon:hover img {
+  transform: scale(1.4)
+ }
+
+ .moon1 img {
+  width: 150px;
+  padding-top: 40px;
+  transition: all 0.2s linear;
+ }
+
+ .moon1:hover img {
+  transform: scale(1.4)
+ }
+
+ .moon2 img {
+  width: 150px;
+  padding-top: 40px;
+  transition: all 0.2s linear;
+ }
+
+ .moon2:hover img {
+  transform: scale(1.4)
+ }
+
+ .moon3 img {
+  width: 150px;
+  padding-top: 40px;
+  transition: all 0.2s linear;
+ }
+
+ .moon3:hover img {
+  transform: scale(1.4)
+ }
+
+ .moon4 img {
+  width: 150px;
+  padding-top: 40px;
+  transition: all 0.2s linear;
+ }
+
+ .moon4:hover img {
+  transform: scale(1.4)
+ }
+
+ .moon5 img {
+  width: 150px;
+  padding-top: 40px;
+  transition: all 0.2s linear;
+ }
+
+ .moon5:hover img {
+  transform: scale(1.4)
+ }
+
+ .BestItem h1 {
+   position: absolute;
+   margin-top: 400px;
+   margin-left: 480px;
+   font-size: 60px;
+   color: transparent;
+   background: linear-gradient(to right top, #9c721e, #623d0d);
+    -webkit-background-clip: text;
+ }
+
+ /* 이미지 클릭 시 텍스트가 나타나는 효과*/
+ .textbox {
+   position:relative;
+   transition: .5s ease;
+ }
+
+ .text {
+   position:absolute;
+   visibility:hidden;
+   text-align: center;
+   color: white;
+   top: 60%;
+   right: 0;
+   left: 0;
+   background-color: #780f98;
+   border-radius: 20px;
+ }
+
+ .textbox:hover .text{
+  visibility:visible;
+}
+
+/* 푸터 */
+#wrapper {
+  height: auto;
+  min-height: 160%;
+  padding-bottom: 300px;
+}
+
+
+footer {
+  margin-top:300px;
+  height: 300px;
+  position: relative;
+  transform: translateY(-100%);
+  background-color: #100044;
+
+}
+
+#footer_info {
+  float: left;
+  margin-top: 10px;
+
+}
+
+#footer_num {
+float: right;
+text-align: left;
+margin-top: 20px;
+}
+
+#copyright {
+  position:absolute;
+  margin-top: 250px;
+  margin-left: 500px; 
+  text-align: center;
+  color: rgb(101, 68, 108);
+}
+
+/* 리모컨 기능 구현 */
+#scrollTop {
+  width: 50px;
+  height: 50px;
+  left: 90%;
+  top: 80%;
+  text-align: center;
+  line-height: 20px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  position: fixed; 
+  cursor: pointer;
+          
+}
+
+#remote {
+  width: 60px;
+  height: 160px;
+  border-radius: 30px;
+  left: 85%;
+  top: 75%;
+  text-align: center;
+  line-height: 20px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  position: fixed; 
+  cursor: pointer;
+  background-color: rgb(215, 111, 0);
+  z-index: 150;
+          
+}
+
+#scrollTop::before {
+  content: "↑";
+  position: absolute;
+  width: 50px;
+  top: -50px;
+  left: 0;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+}
+
+
+
+#scrollTop:hover {
+color: rgb(253, 110, 27);
+text-decoration: none;
+}
+
+#scrollTop:hover:before {
+color: rgb(253, 110, 27);
+text-decoration: none;
+}
+
+
+/* 상품 페이지 */
+.con {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cell {
+  float: left;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.img-box > img {
+  display: block;
+  width: 100%;
+}
+/*커스텀*/
+html,
+body {
+  
+}
+.con {
+  max-width: 1200px;
+}
+.logo-bar {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.bn-box {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+@media ( max-width:700px ) {
+  .top-bn-box-1 {
+      overflow-x:hidden;
+  }
+
+  .top-bn-box-1 > .img-box {
+      margin-left:-50%;
+  }
+}
+
+.menu-box {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.menu-box > ul > li {
+  width: calc(100% / 7);
+}
+@media (max-width: 800px) {
+  .menu-box {
+      display: none;
+  }
+}
+
+.menu-box > ul > li > a {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+}
+.menu-box > ul > li:hover > a {
+  color: red;
+  text-decoration: underline;
+}
+.menu-box > ul > li > a::before,
+.menu-box > ul > li > a::after {
+  content: "";
+  width: 1px;
+  height: 13px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  left: 0;
+}
+.menu-box > ul > li > a::after {
+  left: auto;
+  right: 0;
+}
+.menu-box > ul > li:first-child > a::before,
+.menu-box > ul > li:last-child > a::after {
+  width: 2px;
+}
+.list > ul > li {
+  width: calc(100% / 6);
+}
+
+.list > ul > li {
+  padding: 0 10px;
+}
+.list > ul {
+  margin: 0 -10px;
+}
+
+.list > ul > li > .product-name {
+  text-align: Center;
+  font-weight: bold;
+}
+.list > ul > li:hover > .product-name {
+  text-decoration: underline;
+}
+.list > ul > li > .product-price {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.list > ul > li > .product-price::after {
+  content: "원";
+  font-size: 1rem;
+  font-weight:normal;
+}
+
+
+@media (max-width: 800px) {
+  .list > ul > li {
+      width: calc(100% / 5);
+  }
+}
+
+@media (max-width: 650px) {
+  .list > ul > li {
+      width: calc(100% / 4);
+  }
+}
+
+@media (max-width: 500px) {
+  .list > ul > li {
+      width: calc(100% / 3);
+  }
+}
+
+@media (max-width: 400px) {
+  .list > ul > li {
+      width: calc(100% / 2);
+  }
+}
+
+@media (max-width: 300px) {
+  .list > ul > li {
+      width: calc(100% / 1);
+  }
+}
+
+  
